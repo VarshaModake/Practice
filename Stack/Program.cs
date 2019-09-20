@@ -106,15 +106,15 @@ namespace Stack
                     Console.WriteLine(emp.NAME + " is pramoted");
                 }
             } while (!method.Equals("0"));
-            
-            
-            //DelegateExample objDel = new DelegateExample();
-            //ResultDelegate rs = new ResultDelegate(objDel.add);
-            //rs(10, 20);
-            //rs = objDel.sub;
-            //rs(20, 10);
-            //rs= objDel.Mul;
-            //rs.Invoke(2, 5);
+
+
+            DelegateExample objDel = new DelegateExample();
+            ResultDelegate rs = new ResultDelegate(objDel.add);
+            rs(10, 20);
+            rs = objDel.sub;
+            rs(20, 10);
+            rs = objDel.Mul;
+            rs.Invoke(2, 5);
 
             //ResultDelegate rsm = new ResultDelegate(objDel.add);
             //rsm += objDel.sub;
